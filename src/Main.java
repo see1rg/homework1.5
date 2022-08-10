@@ -9,53 +9,70 @@ public class Main {
 
         // task2()
 
-        int i = 0;
-        System.out.print(array[i]);
-        for (i = 1; i < array.length; i++) {
-            System.out.print(", " + array[i]);
+
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i]);
+            if (i < array.length - 1) {
+                System.out.print(", ");
+            }
         }
 
-        i = 0;
-        System.out.print("\n" + list[i]);
-        for (i = 1; i < list.length; i++) {
-            System.out.print(", " + list[i]);
+        System.out.println();
+        for (int i = 0; i < list.length; i++) {
+            System.out.print(list[i]);
+            if (i < list.length - 1) {
+                System.out.print(", ");
+            }
         }
 
-        i = 0;
-        System.out.print("\n" + example[i]);
-        for (i = 1; i < example.length; i++) {
-            System.out.print(", " + example[i]);
+        System.out.println();
+        for (int i = 0; i < example.length; i++) {
+            System.out.print(example[i]);
+            if (i < example.length - 1) {
+                System.out.print(", ");
+            }
         }
 
         // task3
 
-        System.out.print("\n" + array[array.length - 1]);
-        for (i = array.length - 2; i > -1; i--) {
-            System.out.print(", " + array[i]);
+        System.out.println();
+        for (int i = array.length - 1; i > -1; i--) {
+            System.out.print(array[i]);
+            if (i > 0) {
+                System.out.print(", ");
+            }
         }
 
-        System.out.print("\n" + list[list.length - 1]);
-        for (i = list.length - 2; i > -1; i--) {
-            System.out.print(", " + list[i]);
+        System.out.println();
+        for (int i = list.length - 1; i > -1; i--) {
+            System.out.print(list[i]);
+            if (i > 0) {
+                System.out.print(", ");
+            }
         }
 
-        System.out.print("\n" + example[example.length - 1]);
-        for (i = example.length - 2; i > -1; i--) {
-            System.out.print(", " + example[i]);
+        System.out.println();
+        for (int i = example.length - 1; i > -1; i--) {
+            System.out.print(example[i]);
+            if (i > 0) {
+                System.out.print(", ");
+            }
         }
 
         // task4
 
-        System.out.println();
-        for (i = 0; i < array.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             if ((array[i]) % 2 != 0) {
                 array[i] += 1;
             }
         }
-        i = 0;
-        System.out.print(array[i]);
-        for (i = 1; i < array.length; i++) {
-            System.out.print(", " + array[i]);
+
+        System.out.println();
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i]);
+            if (i < array.length - 1) {
+                System.out.print(", ");
+            }
         }
     }
 }
